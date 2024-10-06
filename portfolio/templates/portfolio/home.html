@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji M - Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/home.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#initiatives">Initiatives</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <!-- Arc shapes surrounding the image -->
+                <div class="arc top"></div>
+                <div class="arc bottom"></div>
+                <div class="arc left"></div>
+                <div class="arc right"></div>
+                <!-- Image -->
+                 <br>
+                 <br>
+                <img src="{% static 'portfolio/images/i.jpg' %}" alt="Balaji M">
+            </div>
+            <div class="hero-text-slider">
+                <div class="hero-text slide emerging">
+                    <h1>Hello, I'm <span>Balaji M</span> !</h1>
+                    <h2>A Social Engineer Passionate About Community Development</h2>
+                    <a href="#initiatives" class="btn">View My Work</a>
+                </div>
+                <div class="hero-text slide emerging">
+                    <h1>Hello, I'm <span>Balaji M</span> !</h1>
+                    <h2>Welcome to my portfolio! I’m Balaji, a social engineer focused on educational transformation and stakeholder management, driving change in remote regions of India through innovative methodologies.</h2>
+                    <a href="#initiatives" class="btn">View My Work</a><br>
+                </div>
+            </div>
+            <!-- Dots Navigation -->
+            <br>
+            <br>
+            <div class="dots-container">
+                <br>
+                <br>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="summary">
+        <div class="summary">
+            <h1>Professional Summary</h1>
+        </div>
+        <div class="intro-container">
+            <div class="intro-content">
+                <p>With over 2 years of experience in education and social transformation, I have led impactful initiatives in remote regions of India. As a Gandhi Fellow, I facilitated leadership curriculum and governance strengthening in schools, reaching over 1,500 students. My accomplishments include presenting my work at prestigious events like Piramal Pharma Limited's donor events in Mumbai and the Dalai Lama Archives in Dharamshala. I have also led the design committee at Anna University Sports Fest and conducted research to improve sports performance through innovative approaches.</p>
+            </div>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+<!-- Initiatives Section -->
+<section class="initiatives" id="initiatives">
+    <div class="initiatives-heading">
+        <h2>Initiatives</h2>
+        <p>Explore my impactful initiatives</p>
+    </div>
+
+    <div class="initiatives-container">
+        <div class="initiative-box">
+            <h3>State Transformation Program (STP)</h3>
+            <p>Implemented governance-strengthening strategies in two remote districts in Jharkhand, India.</p>
+            <ul>
+                <li><strong>Focus:</strong> Education Domain</li>
+                <li><strong>Impact:</strong> Improved school management in 4 schools, enhancing student and teacher engagement.</li>
+            </ul>
+            <a href="stp.html" class="btn">View More</a>
+        </div>
+
+        <div class="initiative-box">
+            <h3>Leadership Curriculum</h3>
+            <p>Designed and facilitated leadership training sessions for educators and fellows.</p>
+            <ul>
+                <li><strong>Focus:</strong> Capacity Building</li>
+                <li><strong>Outcome:</strong> Conducted leadership curriculum for fellows, impacting over 1,500 students through innovative teaching methods.</li>
+            </ul>
+            <a href="leadership.html" class="btn">View More</a>
+        </div>
+
+        <div class="initiative-box">
+            <h3>Project-Based Learning (PBL)</h3>
+            <p>Executed Project-Based Learning methodology for 270 students and piloted a Physical Literacy Education approach for 1,500 students.</p>
+            <ul>
+                <li><strong>Impact:</strong> Enhanced student engagement and improved whole-school development through innovative learning models.</li>
+            </ul>
+            <a href="pbl.html" class="btn">View More</a>
+        </div>
+    </div>
+</section>
+<section id="skills">
+    <div class="skills-container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <!-- Project Management Card -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Project Management</h3>
+                <p>Experience in managing projects effectively.</p>
+            </div>
+            <!-- Stakeholder Management Card -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Stakeholder Management</h3>
+                <p>Effective communication and collaboration with stakeholders.</p>
+            </div>
+            <!-- Curriculum Design Card -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Curriculum Design</h3>
+                <p>Designing structured educational content and programs.</p>
+            </div>
+            <!-- Graphic Design Card -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Creative design with Adobe Suite, Canva, and Figma.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="experience" class="experience-section">
+    <div class="experience-header">
+        <h2>Experience</h2>
+    </div>
+    <div class="experience-content">
+        <div class="experience-row">
+            <div class="timeline right-align">
+                <p class="timeline-date">• August 2024 - Present</p>
+            </div>
+            <div class="vertical-line">
+                <span class="bullet"></span> <!-- Bullet for first row -->
+            </div>
+            <div class="experience-details">
+                <div class="card">
+                    <h3 class="card-title">Volunteer - Bhumi Foundation</h3>
+                    <ul class="card-responsibilities">
+                        <li><span class="check-icon">✔️</span> Teaching students in English and Science, contributing to community-level education development.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="experience-row">
+            <div class="timeline right-align">
+                <p class="timeline-date">• August 2022 - August 2024</p>
+            </div>
+            <div class="vertical-line">
+                <span class="bullet"></span> <!-- Bullet for second row -->
+            </div>
+            <div class="experience-details">
+                <div class="card">
+                    <h3 class="card-title">Gandhi Fellow - Piramal Foundation</h3>
+                    <ul class="card-responsibilities">
+                        <li><span class="check-icon">✔️</span> Facilitated school management and capacity-building sessions, reaching 1,500+ students in Jharkhand.</li>
+                        <li><span class="check-icon">✔️</span> Led content design for Project-Based Learning and governance projects.</li>
+                        <li><span class="check-icon">✔️</span> Presented success stories at donor events in Mumbai and Dharamshala.</li>
+                        <li><span class="check-icon">✔️</span> Supported state-level teacher capacity-building programs.</li>
+                        <li><span class="check-icon">✔️</span> Conducted research on sports terminologies to enhance community sports performance.</li>
+                        <li><span class="check-icon">✔️</span> Managed the design committee for Anna University Sports Fest, creating event graphics and banners.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-cta">
+        <a href="#" class="learn-more">Learn More</a>
+        <p>Explore my contributions in detail</p>
+    </div>
+</section>
+<section class="education-section" id="education">
+    <div class="container">
+        <h2 class="education-heading">Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <h3>Bachelor of Engineering in Printing Technology</h3>
+                <hr class="separator">
+                <div class="institution-container">
+                    <p class="institution">Anna University, Chennai</p>
+                    <span class="badge">2018</span>
+                </div>
+                <p class="percentage">73%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 73%;"></div>
+                </div>
+            </div>
+            <div class="education-card">
+                <h3>Higher Secondary (HSLC)</h3>
+                <hr class="separator">
+                <div class="institution-container">
+                    <p class="institution">N/A</p>
+                    <span class="badge">2014</span>
+                </div>
+                <p class="percentage">94%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 94%;"></div>
+                </div>
+            </div>
+            <div class="education-card">
+                <h3>SSLC</h3>
+                <hr class="separator">
+                <div class="institution-container">
+                    <p class="institution">N/A</p>
+                    <span class="badge">2012</span>
+                </div>
+                <p class="percentage">91%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 91%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="resume" class="resume-section">
+    <div class="container">
+        <h2 class="section-heading">Resume</h2>
+        <p class="section-description">Download Balaji's resume as a PDF</p><br>
+        <a href="{% static 'portfolio/pdf/Balaji_Resume.pdf' %}" download="Balaji_Resume.pdf" class="download-btn">
+            <span class="btn-text">Download Resume</span>
+            <span class="icon"><i class="fa-solid fa-file"></i></span> <!-- Using Font Awesome Download Icon -->
+        </a>        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container" id="footer">
+        <div class="footer-logo">
+            <img src="path/to/logo.png" alt="Logo" class="footer-logo-img"> <!-- Add your logo image source here -->
+        </div>
+        <div class="footer-menu">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#initiatives">Initiatives</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Information</h4>
+            <p><i class="bi bi-envelope-fill"></i> <a href="mailto:balajipkrs@gmail.com">balaji@example.com</a></p>
+            <p><i class="bi bi-phone-fill"></i> <a href="tel:+918675380505">+91 8675380505</a></p>
+            <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/balaji" target="_blank">linkedin.com/in/balaji</a></p>
+            <p><i class="bi bi-geo-alt-fill"></i> <a href="https://www.google.com/maps/place/Namakkal,+Tamil+Nadu" target="_blank">Namakkal, Tamil Nadu</a></p>
+        </div>
+    </div>
+    <p class="footer-rights">&copy; 2024 Balaji M. All rights reserved.</p>
+</footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarMenu = document.querySelector('.navbar-menu');
+
+    navbarToggle.addEventListener('click', function() {
+        navbarToggle.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.navbar-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbarToggle.classList.remove('active');
+            navbarMenu.classList.remove('active');
+        });
+    });
+});
+        // Optional hover animations (e.g., icons bouncing slightly)
+document.querySelectorAll('.skill-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.querySelector('.skill-icon').classList.add('bounce');
+    });
+    card.addEventListener('mouseleave', () => {
+        card.querySelector('.skill-icon').classList.remove('bounce');
+    });
+});
+
+// Add bounce animation CSS
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+    .bounce {
+        animation: bounce 0.6s ease-in-out;
+    }
+`;
+document.head.appendChild(style);
+
+        let slideIndex = 1;
+        let autoSlideInterval = setInterval(() => showSlides(slideIndex += 1), 7000);
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].classList.remove('emerging'); // Remove class for animation reset
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].classList.add('emerging'); // Add class for animation
+            dots[slideIndex - 1].className += " active";
+        }
+
+        const slides = document.getElementsByClassName("slide");
+        for (let slide of slides) {
+            slide.addEventListener("mouseenter", () => clearInterval(autoSlideInterval));
+            slide.addEventListener("mouseleave", () => {
+                autoSlideInterval = setInterval(() => showSlides(slideIndex += 1), 5000);
+            });
+        }
+    </script>
+</body>
+</html>
