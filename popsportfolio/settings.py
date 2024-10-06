@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+y!oql5%jiajyb_j!h)_2ej&!)@vooqni5s9k=g01wk(o(k$%z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['balajiportfolio-2d19.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','balajiportfolio-2d19.onrender.com']
 
 
 # Application definition
@@ -120,9 +120,12 @@ USE_TZ = True
 import os
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Change to a more appropriate name if needed
 
-
+# Collect static files from each app and store them in STATIC_ROOT
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',  # If you have additional static files in a 'static' directory
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
