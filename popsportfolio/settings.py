@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+y!oql5%jiajyb_j!h)_2ej&!)@vooqni5s9k=g01wk(o(k$%z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['balaji.onrender.com']
+ALLOWED_HOSTS = ['balajiportfolio-2d19.onrender.com']
 
 
 # Application definition
